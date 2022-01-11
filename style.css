@@ -1,0 +1,123 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.gamecontainer{
+    background-image: url(grass.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    overflow: hidden;
+}
+.road{
+    background-image: url(road.jpg);
+    
+    position: relative;
+    height: 50.2vw;
+    width: 30vw;
+    left: 550px;
+    top: -14%;
+}
+.gameover{
+    position: relative;
+    font-family: sans-serif;
+    top: 63px;
+    font-size: 53px;
+    text-align: center;
+    border: 3px solid yellow;
+    border-radius: 23px;
+    visibility: hidden;
+    width: 500px;
+}
+#scorecont{
+    border: 2px solid black;
+    width: 129px;
+    border-radius: 3px ;
+    
+}
+.car2{
+    background-image: url(car2r.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 210px;
+    position: absolute;
+    top: 0%;
+    left: 650px;
+}
+.car3{
+    background-image: url(car3r.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 210px;
+    position: absolute;
+    top: 0%;
+    left: 800px;
+}
+.F1{
+    background-image: url(F1.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 210px;
+    position: absolute;
+    top: -128%;
+    left: 724px;
+}
+.car1{
+    background-image: url(car1r.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 210px;
+    position: absolute;
+    bottom: 0%;
+    left: 730px;
+}
+.animatecar1{
+    animation: car1 0.5s linear;
+}
+.animatecar2{
+    animation: animatecar2 5s linear infinite;
+}
+.animatecar3{
+    animation: animatecar3 7s linear infinite;
+}
+.animateF1{
+    animation: animatecar3 10s linear infinite;
+}
+@keyframes car1{
+    0%{
+        bottom: 0%;
+    }
+    50%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 00px;
+    }
+}
+@keyframes animatecar2{
+    0%{
+        top:-10vw;
+    }
+    100%{
+        top: 100vw;
+    }
+}
+@keyframes animatecar3{
+    0%{
+        top:-10vw;
+    }
+    100%{
+        top: 100vw;
+    }
+}
+/* @keyframes animateF1{
+    0%{
+        top:-10vw;
+    }
+    100%{
+        top: 100vw;
+    }
+} */
